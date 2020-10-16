@@ -9,6 +9,3 @@ def test_config():
 def test_hello(client):
     response = client.get("/hello")
     assert response.data == b"Hello, World!"
-
-def test_fail_please():
-    assert True == False
