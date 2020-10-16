@@ -10,12 +10,8 @@ jobs:
       - checkout
       - python/install-packages:
           args: -e .
-      - run:
-          cmd: pip install '.[test]'
-          name: install test
-      - run:
-          cmd: pytest
-          name: run test
+      - run: pip install '.[test]'
+      - run: pytest
 
 workflows:
   main:
