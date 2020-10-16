@@ -1,3 +1,6 @@
 .venv/**
 instance/**
 .DS_Store
+build/**
+dist/**
+flaskr.egg-info/**

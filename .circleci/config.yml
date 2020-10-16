@@ -12,6 +12,7 @@ jobs:
           args: .
       - run: pip install '.[test]'
       - run: pytest
+      - python/dist
 
 workflows:
   main:
